@@ -40,7 +40,6 @@ class Embed:
             color=discord.Colour.red()
         )
         noVC.set_author(name=ctx.author.name, icon_url=ctx.author.avatar)
-        noVC.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/\
-            424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")
+        noVC.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")
         noVC.set_image(url="https://i.imgflip.com/6pj1f0.jpg")
         return noVC
