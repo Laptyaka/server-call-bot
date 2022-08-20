@@ -1,11 +1,15 @@
 import os
+import sys
 import discord
 from discord.ui import Button, View
-from login import isHeroku
 from embeds import Embed
-if not isHeroku.isHeroku():
-    from dotenv import load_dotenv
-    load_dotenv()
+
+if len(sys.argv) == 2:
+    sys.argv[1]
+    if not sys.argv[1]== '-h':
+        from dotenv import load_dotenv
+        load_dotenv()
+
 
 bot = discord.Bot()
 
