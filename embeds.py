@@ -3,11 +3,9 @@ import discord
 
 class Embed:
     global avatar
-    avatar = "https://cdn.discordapp.com/avatars/424172023418454020/\
-        6fca84235b59a619b7d3bb2d471d2fa4.png?size=256"
+    avatar = "https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256"
     global glent
-    glent = "https://i.pinimg.com/originals/\
-        df/7a/aa/df7aaaa291637eb293a401426ed6fdb2.jpg"
+    glent = "https://i.pinimg.com/originals/df/7a/aa/df7aaaa291637eb293a401426ed6fdb2.jpg"
 
     def in_call(ctx, invite, icon):
         inCall = discord.Embed(
@@ -31,10 +29,8 @@ class Embed:
             color=discord.Colour.blurple()
         )
         called.set_author(name=ctx.author.name, icon_url=ctx.author.avatar)
-        called.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/\
-            424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")
-        called.set_thumbnail(url="https://i.pinimg.com/originals/df/7a/aa/\
-            df7aaaa291637eb293a401426ed6fdb2.jpg")
+        called.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")
+        called.set_thumbnail(url="https://i.pinimg.com/originals/df/7a/aa/df7aaaa291637eb293a401426ed6fdb2.jpg")
         return called
 
     def noVC(ctx):
