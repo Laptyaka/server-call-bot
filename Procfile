@@ -1,1 +1,1 @@
-worker: python vcCall.py -h
+worker: python main.py -h
