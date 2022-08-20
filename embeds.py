@@ -3,7 +3,7 @@ import discord
 
 class Embed:
     global avatar
-    avatar = "https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256"
+    avatar = "https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256"  # noqa: E501
     global glent
     glent = "https://i.pinimg.com/originals/df/7a/aa/df7aaaa291637eb293a401426ed6fdb2.jpg"
 
@@ -29,8 +29,8 @@ class Embed:
             color=discord.Colour.blurple()
         )
         called.set_author(name=ctx.author.name, icon_url=ctx.author.avatar)
-        called.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")
-        called.set_thumbnail(url="https://i.pinimg.com/originals/df/7a/aa/df7aaaa291637eb293a401426ed6fdb2.jpg")
+        called.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")  # noqa: E501
+        called.set_thumbnail(url="https://i.pinimg.com/originals/df/7a/aa/df7aaaa291637eb293a401426ed6fdb2.jpg")  # noqa: E501
         return called
 
     def noVC(ctx):
@@ -40,6 +40,6 @@ class Embed:
             color=discord.Colour.red()
         )
         noVC.set_author(name=ctx.author.name, icon_url=ctx.author.avatar)
-        noVC.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")
+        noVC.set_footer(text="Made by Lapt💙💛ka", icon_url="https://cdn.discordapp.com/avatars/424172023418454020/6fca84235b59a619b7d3bb2d471d2fa4.png?size=256")  # noqa: E501
         noVC.set_image(url="https://i.imgflip.com/6pj1f0.jpg")
         return noVC

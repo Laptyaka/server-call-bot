@@ -6,7 +6,7 @@ from embeds import Embed
 
 if len(sys.argv) == 2:
     sys.argv[1]
-    if not sys.argv[1]== '-h':
+    if not sys.argv[1] == '-h':
         from dotenv import load_dotenv
         load_dotenv()
 
