@@ -36,11 +36,11 @@ async def call(ctx, user: discord.User):
         await user.send(view=view, embed=in_call, delete_after=600)
 
         called = Embed.called(ctx, user)
-        await ctx.respond(embed=called, delete_after=15)
+        await ctx.respond(embed=called, delete_after=15, ephemeral=True)
         print(ctx.author.name + " called " + user.name)
     else:
         noVC = Embed.noVC(ctx)
-        await ctx.respond(embed=noVC, delete_after=10)
+        await ctx.respond(embed=noVC, delete_after=10, ephemeral=True)
         print(ctx.author.name + " tried to call " + user.name
               + " but was not in a VC")
 
