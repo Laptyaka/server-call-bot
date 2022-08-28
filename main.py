@@ -45,5 +45,3 @@ async def call(ctx, user: discord.User):
               + " but was not in a VC")
 
 bot.run(os.environ['TOKEN'])
-
-#commit test
